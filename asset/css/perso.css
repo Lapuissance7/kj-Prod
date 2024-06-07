@@ -1,0 +1,802 @@
+/* header */
+*{
+    box-sizing: border-box;   
+}
+.body_acceuil{
+    background-color: black; 
+    color: white;
+    font-family: "Philosopher", sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.logo{
+    width: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+
+}
+
+
+.menu{
+    background-image: url(../img/y.webp);
+    background-repeat: no-repeat;
+     background-size: cover;
+     height: 100vh;
+     width: 100%;  
+}
+
+
+.m{
+    margin-top: 14%;
+    text-align: center;
+    font-size: 25px;
+
+}
+.touche{
+    background-color: #EE3A44;
+    color: white;
+    font-size: 110%;
+
+}
+.b{
+    text-align: end;
+     margin-top: -59px; 
+    
+
+}
+/* opacité de l'image en couvrant avec une couleur et reduire l'opacité */
+.aa{
+    background: rgba(19, 18, 18, 0.73);
+    opacity: 500px;
+    height: 100vh;
+
+}
+
+
+/* header */
+
+
+
+/* Main */
+.block{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+ .article{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    
+} 
+
+
+.article img{
+    width: 20vh;
+    height:40vh ;
+    border-radius: 20px;
+    padding: 10px;
+    
+} 
+
+.titres{
+    font-size: 4vh;
+}
+
+
+
+
+.cm3{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.cmm{
+    width: 50%;
+    height: 70vh;
+
+}
+
+.txt{
+    font-size: 3vh;
+}
+
+
+
+
+.questions{
+    text-align: center;
+}
+
+.questiooon{
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.menus{
+
+     background-color: #a69798;
+
+
+    position: relative;
+    list-style-type: none;
+    text-decoration: none;
+    height: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+    
+    
+.sousmenu{ 
+        /* quand le menu déroulant s'ouvre tout les blocks restent a leur place */
+         position: absolute;
+
+        background-color: #a69798; 
+
+        /* pour cacher le sous menu */
+         display: none;
+        list-style-type: none;
+        text-decoration: none;
+        text-align: center;
+        left: 0%;
+}
+
+
+/* pour qu'un élément ouvre un autre */
+.menus li:hover .sousmenu{
+
+    /* pour activer l'apparition du sous menu*/
+    display: block;
+
+}
+.menus a{
+    color: #EE3A44;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* slide--------------------------------- */
+
+#box{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite; 
+}
+@keyframes animate{
+    0% {
+        transform: perspective(1000px)rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px)rotateY(360deg);
+    }
+}
+.box span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg))translateZ(280px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+    margin-left: -30vh;
+
+}
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160%;
+    object-fit: cover;
+
+}
+
+
+
+
+/* Page 1 */
+.r{
+    border-radius: 10px;
+    background-color: #EE3A44;
+    color: #ffffff;
+    font-size: 110%;
+    text-decoration: none ;
+}
+.corp {
+    background-image: url(../img/assis.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+     height: 100vh;
+}
+.toucher{
+    align-items: center;
+}
+.onepage{
+    background-color: black;
+}
+.resumer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15%;
+
+}
+.toucherr{
+    font-size: 4vh;
+   
+    margin-top: 15vh;
+    border-radius: 10px;
+    background-color: #EE3A44;
+    color: #ffffff;
+    
+}
+.reel{
+    color:#EE3A44;
+    text-align: center;
+}
+.instru{
+    color: #ffffff;
+}
+
+.info{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+}   
+.pp{
+    font-size: 3vh;
+}
+.temps{
+    text-align: center;
+    border-radius: 6px;
+    background-color: #EE3A44;
+    color: #ffffff;
+    font-size: 2.5vh;
+}
+.genre{
+    flex-direction: column;
+}
+.bonjour{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.rea{
+    color: white;
+}
+.instru{
+    text-decoration: underline;
+}
+.reel{
+    text-decoration: underline;
+}
+.cv{
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+}
+.cree{
+    display: flex;
+}
+.ben{
+    margin-left: 4vh;
+}
+.wewe{
+    height: 40vh;
+    width: 70vh;
+}
+
+/* Page 1 */
+
+
+
+/* page 2 */
+.corps2 {
+    background-image: url(../img/Enfant.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+     height: 100vh;
+}
+/* page 2 */
+
+
+
+
+/* page 3 */
+.corps3 {
+    background-image: url(../img/genoux.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+     height: 100vh;
+}
+/* page3  */
+
+
+/* page 4 */
+.corps4 {
+    background-image: url(../img/sisters.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+     height: 100vh;
+}
+/* page 4 */
+
+
+/* page 5 */
+.corps5 {
+    background-image: url(../img/matrix.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+     height: 100vh;
+}
+/* page 5 */
+
+
+
+/* page 6 */
+.corps6 {
+    background-image: url(../img/me-before-you.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+     height: 100vh;
+}
+/* page 6 */   
+
+/* page 7 */
+.corps7 {
+    background-image: url(../img/topboy.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+     height: 100vh;
+}
+.tempss{
+    text-align: center;
+
+}
+/* page 7 */   
+
+/* page 8 */
+.corps8 {
+    background-image: url(../img/prison.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+     height: 100vh;
+}
+/* page 8 */   
+
+
+/* page 9 */
+.corps9 {
+    background-image: url(../img/teenwolf.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+     height: 100vh;
+}
+/* page 9 */   
+
+
+/* page profil */
+.bob{
+    color: #ffffff;
+    text-align: center;
+    font-size: 4vh;
+}
+.profil{
+    
+    display: flex;
+  
+    text-align: center;
+    align-items: center;
+    margin-top: 15vh;
+} 
+
+
+.cp{
+    width: 25vh;
+    height:25vh ;
+    border-radius: 20px;
+    
+} 
+
+.ttre{
+    font-size: 3vh;
+    margin-left: 5vh;
+}
+.onepage{
+    color: #ffffff;
+}
+.c{
+    width: 30vh;
+    height:50vh ;
+    border-radius: 20px;
+    margin: 9vh;
+    align-items: center;
+}
+.mo{
+    text-align: center;
+    text-decoration-line: underline;
+}
+/* page profil */
+
+
+
+/* page connexion */
+
+.login{
+    margin-top: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #a69798;
+}
+.toto{
+    display: flex;
+    
+    justify-content: center;
+    
+
+}
+.yoyo{
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.h{
+    
+    font-size: 24px;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+.rtt{
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+.rt{
+    background : rgba(64, 58, 58, 0.87);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+}
+.tt{
+    background: #EE3A44;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 15vh;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.obl{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+/* footer */
+.fin{
+    display: flex;
+    justify-content: space-around;
+}
+.nada{
+    background-color: #ffffff;
+    height: 7px;
+    margin-top: 15px;
+}
+
+
+
+
+/* pour changer de format (ordi, tablette, portable) */
+
+@media screen and (min-width:300px) and (max-width: 599px) {
+    
+        *{
+            flex-direction: column;
+            align-items: center;
+        }
+        .m{
+            margin-top: 60%;
+            text-align: center;
+            font-size: 16px;
+        
+        }
+        .box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite; 
+}
+    .article img{
+    width: 20vh;
+    height:40vh ;
+    border-radius: 20px;
+    padding: 10px;
+    
+} 
+        .cmm{
+            width: 100%;
+            height: 40vh;
+            margin-top: 15%;
+        
+        }
+        .menus{
+
+            background-color: #a69798;
+       
+       
+           position: relative;
+           list-style-type: none;
+           text-decoration: none;
+           height: 52px;
+           width: 50%;
+           display: flex;
+           justify-content: center;
+       }
+       .cm{
+        margin-bottom: -80%;
+       }
+       .cm1{
+        margin-bottom: -5%;
+       }
+       .last{
+        margin-bottom: 50vh;
+       }
+       .first{
+        margin-bottom: -20vh;
+       }
+       .cm3{
+        margin-top: -55%;
+       }
+       .quoi{
+        margin-bottom: 29%;
+       }
+       .menus{
+        width: 80%;
+       }
+       .toucherr{
+        font-size: 2vh;
+       }
+       .wewe{
+        height: 30%;
+        width: 80%;
+        }
+        .corp, .corps2, .corps3, .corps4, .corps5, .corps5, .corps7, .corps8, .corps9{
+            height: 80%;
+        }
+        #box{
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+            background: #000;
+        }
+        .box{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            animation: animate 20s linear infinite; 
+        }
+        .box span{
+            position: absolute;
+            width: 75%;
+            height: 75%;
+            transform-origin: center;
+            transform-style: preserve-3d;
+            transform: rotateY(calc(var(--i)*45deg))translateZ(280px);
+            -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+            margin-left: -30vh;
+        
+        }
+        .box span img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 160%;
+            object-fit: cover;
+        
+        }
+    
+    .bella{
+     display: flex;
+     flex-direction: column;
+     }
+
+     .bob{
+         text-align: left;
+     }
+
+}
+
+
+
+
+
+
+
+    
+@media screen and (min-width:600px) and (max-width: 900px) {
+    
+        *{
+            flex-direction: column;
+            align-items: center;
+        }
+        .m{
+            margin-top: 42%;
+            text-align: center;
+            font-size: 25px;
+        
+        }
+        .box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite; 
+}
+    .article img{
+    width: 20vh;
+    height:40vh ;
+    border-radius: 20px;
+    padding: 10px;
+    
+} 
+        .cmm{
+            width: 100%;
+            height: 40vh;
+            margin-top: 15%;
+        
+        }
+        .menus{
+
+            background-color: #a69798;
+       
+       
+           position: relative;
+           list-style-type: none;
+           text-decoration: none;
+           height: 52px;
+           width: 50%;
+           display: flex;
+           justify-content: center;
+       }
+       .cm{
+        margin-bottom: -70%;
+       }
+       /* .cm1{
+        margin-bottom: -40%;
+       } */
+       .last{
+        margin-bottom: 50vh;
+       }
+       .first{
+        margin-bottom: -10vh;
+       }
+       .cm3{
+        margin-top: -35%;
+       }
+       
+       .quoi{
+        margin-bottom: 50%;
+       }
+       .menus{
+        width: 80%;
+       }
+       .toucherr{
+        font-size: 2vh;
+       }
+       .kil{
+        margin-top: 140px;
+       }
+       .wewe{
+        height: 30%;
+        width: 70%;
+        }
+        .corp{
+            height: 80%;
+        }
+
+}
+
+/* conditions d'utilisations */
+.cgo{
+    margin-top: 20vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #a69798;
+    
+}
+.modif{
+    text-decoration: underline;
+    color:  #EE3A44;
+    text-align: center;
+}
+.p{
+    font-size: 20px;
+}
+.s{
+    text-decoration: underline;
+    color: #EE3A44;
+}
+
+.rtg{
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+
+.hq{
+    font-size: 24px;
+    text-align: center;
+}
+
+    
+
+
+
+           
+
+
+
